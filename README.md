@@ -63,7 +63,4 @@ df = pd.read_csv("dados-imersao-final.csv")
 ---
 
 ## 🤝 Contribuição
-Abra uma issue ou envie um pull request com melhorias.
-
-## 📜 Licença
-Escolha uma licença (ex.: MIT) ou remova esta seção se não aplicável.
+Obrigado Alura pela imersão de dados com python !!
