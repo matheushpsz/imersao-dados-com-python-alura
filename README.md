@@ -1,13 +1,21 @@
-# imersao-dados-com-python-alura: Dashboard de Salários na Área de Dados
+# Dashboard de Salários na Área de Dados ✅
 
-Este repositório contém um dashboard Streamlit para análise de salários na área de dados. O script principal é [app.py](app.py) e as dependências estão em [requirements.txt](requirements.txt). Há também o arquivo de dados local [dados-imersao-final.csv](dados-imersao-final.csv), embora o app atualmente carregue os dados de uma URL remota.
+Breve descrição: dashboard em Streamlit que exibe análise de salários na área de dados (gráficos, tabelas e filtros). O script principal é `app.py` e as dependências estão em `requirements.txt`.
 
-## Requisitos
-- Python 3.8+  
-- pip
+---
 
-## Instalação
-1. Crie e ative um ambiente virtual (opcional, recomendado):
+## 🔗 Link do app (deploy)
+- Demo pública: **https://imersao-dados-com-python-alura-hspszmatheus.streamlit.app/**
+
+---
+
+## 🧰 Requisitos
+- **Python 3.8+**
+- **pip**
+
+## ⚙️ Instalação (rápido)
+1. Criar e ativar um ambiente virtual (recomendado):
+
 ```sh
 python -m venv .venv
 # Windows
@@ -16,26 +24,46 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-2. Instale as dependências:
+2. Instalar dependências:
+
 ```sh
 pip install -r requirements.txt
 ```
 
-## Executando o projeto
-Inicie o app Streamlit:
+## ▶️ Executando localmente
 ```sh
 streamlit run app.py
 ```
-Depois, abra no navegador: http://localhost:8501
+Abra no navegador: `http://localhost:8501` (ou siga o endereço mostrado no terminal).
 
-## Observações
-- O arquivo [app.py](app.py) atualmente carrega os dados a partir de um repositório remoto. Para usar o arquivo local [dados-imersao-final.csv](dados-imersao-final.csv), substitua a linha de leitura do CSV por:
+---
+
+## 📂 Como usar o CSV local
+Por padrão o app pode carregar dados de uma URL. Para usar o arquivo local `dados-imersao-final.csv`, abra `app.py` e substitua a linha de leitura remota por:
+
 ```py
 df = pd.read_csv("dados-imersao-final.csv")
 ```
-- Se encontrar problemas com versões de pacotes, verifique [requirements.txt](requirements.txt) e ajuste seu ambiente conforme necessário.
 
-## Estrutura de arquivos
-- `app.py` — aplicação Streamlit com visualizações
+> **Nota:** verifique se o dataframe resultante não está vazio após os filtros.
+
+---
+
+## 🛠️ Troubleshooting (dicas)
+- Se algum gráfico não aparecer, cheque o conteúdo de `df` e as colunas usadas nos filtros.
+- Em caso de erro de dependência, confira as versões em `requirements.txt` e recrie o ambiente virtual.
+
+---
+
+## 🧾 Estrutura de arquivos
+- `app.py` — aplicação Streamlit
 - `requirements.txt` — dependências do projeto
-- `dados-imersao-final.csv` — conjunto de dados (opcional, usado localmente se alterado)
+- `dados-imersao-final.csv` — arquivo de dados (opcional)
+
+---
+
+## 🤝 Contribuição
+Abra uma issue ou envie um pull request com melhorias.
+
+## 📜 Licença
+Escolha uma licença (ex.: MIT) ou remova esta seção se não aplicável.
